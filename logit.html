@@ -1,21 +1,24 @@
 <template name="logit">
-  <h3>Log</h3>
-  <a href="#" id="logit">Download</a>
-  <table>
-    <thead>
-      <tr>
-        <th>time</th>
-        <th>log</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each logs}}
-      <tr>
-        <td>{{time}}</td>
-        <td>{{message}}</td>
-      </tr>
-      {{/each}}
-    </tbody>
-  </table>
+  <div class="logit">
+    <h3>Log </h3>
+    <p><a href="#" id="logit">(Download)</a></p>
+    <hr>
+    <table>
+      <thead>
+        <tr>
+          <th>time</th>
+          <th>log</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each logs}}
+        <tr>
+          <td>{{time}}</td>
+          <td>{{message}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
 </template>
-  
+
