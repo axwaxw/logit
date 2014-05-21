@@ -1,10 +1,12 @@
 Package.describe({
-  summary: "A Simple Logging Package"
+  summary: "Very simple logging"
 });
 
-Package.on_use(function (api) {
+Package.on_use(function (api, where) {
+  api.use(['underscore','templating'], 'client');
+  api.add_files(['logit.html', 'logit.css', 'logit.js'], 'client');
   api.add_files('common.js', ['client', 'server']);
-  api.add_files('logit.html', 'client'); 
-  api.add_files('logit.js', 'client');  
-  api.export('Logit', ['client', 'server']);  
+  
+  if (api.export) 
+    api.export('Logit');
 });
