@@ -1,9 +1,8 @@
 Template.logit.events({
    'click #logit': function (e) {    
-     console.log(e.target.href)
     var str = ''
     var line = ''
-    var log = Log.find().fetch()       
+    var log = Logit.collection.find().fetch()       
     _.each(log, function(update){
     line = update.time + ', ' + update.message;
     str += line + '\r\n';
@@ -16,6 +15,6 @@ Template.logit.events({
 
 Template.logit.helpers ({
   logs: function () {    
-    return Log.find({},{sort: {time: -1}}).fetch()    
+    return Logit.collection.find({},{sort: {time: -1}}).fetch()    
   }, 
 })
