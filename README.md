@@ -16,3 +16,9 @@ The template also includes a 'download'  which allows you to export logs to a tx
 The logit() function takes one argument: message.
 
 All logs are automatically time-stamped.
+
+To see the log, just include the logit template somewhere in your app:
+
+```html
+  {{> logit}}
+```
