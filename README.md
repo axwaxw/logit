@@ -3,7 +3,7 @@ Logit
 
 Really simple logging for [Meteor](http://meteor.com).
 
-##W hat This Does
+## What This Does
 
 Logit mimics console.log() by writing messages to a collection call 'Logit'.
 
