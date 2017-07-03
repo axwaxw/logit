@@ -3,7 +3,7 @@ Logit
 
 Really simple logging for [Meteor](http://meteor.com).
 
-##What This Does
+##W hat This Does
 
 Logit mimics console.log() by writing messages to a collection call 'Logit'.
 
@@ -11,7 +11,7 @@ The package includes a simple template (called 'logit') which shows all logs in 
 
 The template also includes a 'download'  which allows you to export logs to a txt file.
 
-##Use
+## Use
 
 The logit() function takes one argument: message.
 
